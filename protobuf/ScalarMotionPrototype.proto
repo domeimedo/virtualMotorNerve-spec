@@ -1,0 +1,7 @@
+syntax = "proto3";
+package com.domeime.vmn;
+
+message ScalarMotionPrototype {
+    int32 min = 1;
+    int32 max = 2;
+}

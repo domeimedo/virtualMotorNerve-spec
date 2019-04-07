@@ -1,0 +1,13 @@
+syntax = "proto3";
+package com.domeime.vmn;
+
+import "Vector3.proto";
+
+message VMNMessage {
+    int32 serialId = 1;
+
+    oneof value {
+        int32 scalar = 2;
+        Vector3 vector3 = 3;
+    }
+}

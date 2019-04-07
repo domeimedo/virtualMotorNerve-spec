@@ -1,0 +1,8 @@
+syntax = "proto3";
+package com.domeime.vmn;
+
+import "Prototype.proto";
+
+message Manifest {
+    repeated Prototype objects = 1;
+}

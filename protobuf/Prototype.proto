@@ -1,0 +1,11 @@
+syntax = "proto3";
+package com.domeime.vmn;
+
+import "MotionPrototype.proto";
+
+message Prototype {
+    string name = 1;
+    int64 identity = 2;
+    uint32 serialId = 3;
+    repeated MotionPrototype motions = 4;
+}

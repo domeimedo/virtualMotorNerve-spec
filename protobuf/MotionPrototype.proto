@@ -1,0 +1,15 @@
+syntax = "proto3";
+package com.domeime.vmn;
+
+import "ScalarMotionPrototype.proto";
+import "Vector3MotionPrototype.proto";
+
+message MotionPrototype {
+    string name = 1;
+    uint32 serialId = 2;
+
+    oneof impl {
+        ScalarMotionPrototype scalar = 3;
+        Vector3MotionPrototype vector3 = 4;
+    }
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+package com.domeime.vmn;
+
+import "Vector3.proto";
+
+message Vector3MotionPrototype {
+    Vector3 min = 1;
+    Vector3 max = 2;
+}
